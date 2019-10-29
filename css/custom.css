@@ -20,8 +20,8 @@
   height: 100px;
   line-height: 100px;
   text-align: center;
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 255, 173, 0.8);
-  background: #22eaaa;
+  box-shadow: inset 0px 0px 0px 3px rgba(0, 255, 173, 0.8);
+  background: transparent;
   display: block;
   position: absolute;
 }
