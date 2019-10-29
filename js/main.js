@@ -1,6 +1,8 @@
 (function() {
 	'use strict';
 
+	var SLIDER_TIME_MS = 5000;
+
 	/*----------------------------------------
 		Detect Mobile
 	----------------------------------------*/
@@ -337,7 +339,7 @@
 	    animation: "fade",
 	    prevText: "",
 	    nextText: "",
-	    slideshowSpeed: 2000, // speed of slides
+	    slideshowSpeed: SLIDER_TIME_MS, // speed of slides
 	    animationSpeed: 600,
 	    slideshow: true,
 	    directionNav: false,
@@ -347,7 +349,7 @@
 	    animation: "fade",
 	    prevText: "",
 	    nextText: "",
-	    slideshowSpeed: 2000, // speed of slides
+	    slideshowSpeed: SLIDER_TIME_MS, // speed of slides
 	    animationSpeed: 600,
 	    slideshow: true,
 	    directionNav: false,
