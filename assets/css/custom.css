@@ -1,77 +1,78 @@
 /**
  * Rotating cube
- * Source:  https://codepen.io/JTParrett/pen/hktzu
+ * Source: https://codepen.io/JTParrett/pen/hktzu
  */
 
 .cube {
-  -webkit-transform-style: preserve-3d;
-  -webkit-animation: spin 3s infinite ease-out;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  top: 50%;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 3s infinite ease-out;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
 }
 
 .cube div {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  box-shadow: inset 0px 0px 0px 3px rgba(0, 255, 173, 0.8);
-  background: transparent;
-  display: block;
-  position: absolute;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    box-shadow: inset 0px 0px 0px 3px rgba(0, 255, 173, 0.8);
+    background: transparent;
+    display: block;
+    position: absolute;
 }
 
 .cube div.top {
-  -webkit-transform: rotateX(90deg);
-  margin-top: -50px;
+    -webkit-transform: rotateX(90deg);
+    margin-top: -50px;
 }
 
 .cube div.right {
-  -webkit-transform: rotateY(90deg);
-  margin-left: 50px;
+    -webkit-transform: rotateY(90deg);
+    margin-left: 50px;
 }
 
 .cube div.bottom {
-  -webkit-transform: rotateX(-90deg);
-  margin-top: 50px;
+    -webkit-transform: rotateX(-90deg);
+    margin-top: 50px;
 }
 
 .cube div.left {
-  -webkit-transform: rotateY(-90deg);
-  margin-left: -50px;
+    -webkit-transform: rotateY(-90deg);
+    margin-left: -50px;
 }
 
 .cube div.front {
-  -webkit-transform: translateZ(50px);
+    -webkit-transform: translateZ(50px);
 }
 
 .cube div.back {
-  -webkit-transform: translateZ(-50px) rotateX(180deg);
+    -webkit-transform: translateZ(-50px) rotateX(180deg);
 }
 
 @-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotateX(-20deg) rotateY(20deg) rotateZ(40deg);
-  }
-  90% {
-    -webkit-transform: rotateX(-20deg) rotateY(450deg) rotateZ(-40deg);
-  }
-  100% {
-    -webkit-transform: rotateX(-20deg) rotateY(20deg) rotateZ(40deg);
-  }
+    0% {
+        -webkit-transform: rotateX(-20deg) rotateY(20deg) rotateZ(40deg);
+    }
+    90% {
+        -webkit-transform: rotateX(-20deg) rotateY(450deg) rotateZ(-40deg);
+    }
+    100% {
+        -webkit-transform: rotateX(-20deg) rotateY(20deg) rotateZ(40deg);
+    }
 }
+
 
 /* Main page */
 
 .probootstrap-logo img {
-  width: 100px;
-  height: auto;
-  margin-top: -5px;
+    width: 100px;
+    height: auto;
+    margin-top: -5px;
 }
 
 .blackandwhite {
@@ -79,9 +80,149 @@
     filter: grayscale(100%);
 }
 
+
 /* Slider */
 
 .slides-text span {
-  color: #22eaaa;
-  font-weight: bold;
+    color: #22eaaa;
+    font-weight: bold;
+}
+
+
+/**
+ * Rotating hexagon
+ * Source: https://codepen.io/Davide_sd/pen/wligy
+ */
+
+.container-hexagone {
+    padding-top: 20%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    perspective: 2000px;
+    perspective-origin: 50% 50%;
+}
+
+.hexagone {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.side-faces {
+    transform-style: preserve-3d;
+}
+
+.top,
+.bottom {
+    position: absolute;
+    line-height: 100px;
+    text-align: center;
+}
+
+.face {
+    position: absolute;
+    width: 175px;
+    height: 100px;
+    background: transparent;
+}
+
+.bottom .face {
+    background: transparent;
+}
+
+.face:nth-child(2) {
+    transform: rotate(60deg);
+}
+
+.face:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+.side {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: transparent;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: inset 0px 0px 0px 5px rgba(0, 255, 173, 0.8);
+}
+
+.hexagone div.filled {
+    background: rgba(0, 255, 173, 0.8);
+}
+
+.top {
+    transform: translateZ(87px);
+}
+
+.bottom {
+    transform: rotateZ(60deg) rotateX(180deg) translateZ(87px);
+}
+
+.side:nth-child(1) {
+    transform: rotateY(-90deg) translateZ(87px);
+}
+
+.side:nth-child(2) {
+    transform: rotateY(-90deg) rotateX(60deg) translateZ(87px);
+}
+
+.side:nth-child(3) {
+    transform: rotateZ(180deg) rotateY(-90deg) rotateX(-60deg) translateZ(87px);
+}
+
+.side:nth-child(4) {
+    transform: rotateZ(180deg) rotateY(-90deg) translateZ(87px);
+}
+
+.side:nth-child(5) {
+    transform: rotateZ(180deg) rotateY(-90deg) rotateX(60deg) translateZ(87px);
+}
+
+.side:nth-child(6) {
+    transform: rotateY(-90deg) rotateX(-60deg) translateZ(87px);
+}
+
+@-webkit-keyframes spinningH {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(720deg) rotateY(360deg);
+    }
+}
+
+@keyframes spinningH {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(720deg) rotateY(360deg);
+    }
+}
+
+.animate {
+    -webkit-animation: spinningH 12s infinite linear;
+    -moz-animation: spinningH 12s infinite linear;
+    -o-animation: spinningH 12s infinite linear;
+    -ms-animation: spinningH 12s infinite linear;
+    animation: spinningH 12s infinite linear;
+}
+
+
+/* Main */
+
+h1.main-call {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+h1.main-call span {
+    background: rgb(10, 10, 10);
 }
