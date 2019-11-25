@@ -216,13 +216,27 @@
 
 /* Main */
 
-h1.main-call {
-    font-size: 4em;
+h1.highlighted span,
+h2.highlighted span {
     text-transform: uppercase;
     font-weight: bolder;
     margin-top: 40px;
+    background: rgb(10, 10, 10);
+    padding: 5px;
 }
 
-h1.main-call span {
-    background: rgb(10, 10, 10);
+h1.highlighted {
+    font-size: 4em;
+}
+
+h2.highlighted {
+    font-size: 3.5em;
+}
+
+.page-hero {
+    height: 400px;
+}
+
+.page-hero div.row {
+    margin-top: 150px;
 }
