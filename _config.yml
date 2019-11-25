@@ -1,0 +1,18 @@
+# Site settings
+title: Your site title
+email: email@domain.com
+description: Site description
+
+# hostname & protocol for your site, e.g http://domain.com
+url: "http://dev.local.com:4000/" 
+
+# Social info
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Misc settings
+safe: true
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/

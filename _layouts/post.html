@@ -1,0 +1,54 @@
+---
+layout: base
+---
+
+<section id="wrapper" class="group">
+<header id="header">
+<a id="title" href="{{ site.url }}">
+  <img src="{{ site.url }}/assets/images/logo.png" style="width: 3em">
+</a>
+</header>
+
+<article class="post">
+	<header>
+		<h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+		<h2 class="headline">{{ page.subtitle }} </h2>
+    {% endif %}
+	</header>
+	<section id="post-body">
+		{{ content }}
+	</section>
+	
+<footer id="post-meta" class="group">
+<div><span>Posted on </span> {{ page.date | date: "%b %d %Y" }}</div>
+
+<section id="sharing">
+<a class="twitter" href="https://twitter.com/share"><span class="icon-twitter-circled"></span></a>
+
+</section> <!--sharing-->
+</footer> <!--post-meta-->
+</article>
+
+<footer>
+<nav id="post-nav">
+	<span class="prev">
+		{% if page.previous %}
+			<a href='{{ site.url }}{{ page.previous.url }}'>
+				<span class="arrow">&larr;</span> {{ page.previous.title }}
+			</a>
+		{% endif %}
+	</span>
+	
+
+	<span class="next">
+		{% if page.next %}
+			<a href='{{ site.url }}{{ page.next.url }}'>
+				{{ page.next.title }} <span class="arrow">&rarr;</span>
+			</a>
+		{% endif %}
+	</span>
+</nav>
+</footer>
+
+</section> <!--wrapper-->

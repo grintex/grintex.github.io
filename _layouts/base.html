@@ -9,13 +9,15 @@
     <meta name="keywords" content="tecnologia, universidade, uffs, inovação, experimental">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles-merged.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/custom.css?20191029">
+    
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles-merged.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/custom.css?20191029">
 
     <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
+      <script src="{{ site.url }}/assets/js/vendor/html5shiv.min.js"></script>
+      <script src="{{ site.url }}/assets/js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -26,7 +28,7 @@
   <header role="banner" class="probootstrap-header">
     <div class="container">
         <a href="index.html" class="probootstrap-logo">
-          <img src="img/logo/grintex-logo-white-transparent.png" title="Logo do Grintex" />
+          <img src="{{ site.url }}/assets/img/logo/grintex-logo-white-transparent.png" title="Logo do Grintex" />
         </a>
         
         <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
@@ -37,8 +39,8 @@
             <li class="active"><a href="./">Inicial</a></li>
           </ul>
           <ul class="probootstrap-right-nav hidden-xs">
-            <li><a href="https://instagram.com/grintex"><i class="icon-instagram2"></i></a></li>
-            <li><a href="https://github.com/grintex"><i class="icon-github"></i></a></li>
+            <li><a href="https://instagram.com/grintex"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/grintex"><i class="fa fa-github"></i></a></li>
           </ul>
           <div class="extra-text visible-xs"> 
             <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
@@ -46,9 +48,9 @@
             <p>198 West 21th Street, Suite 721 New York NY 10016</p>
             <h5>Connect</h5>
             <ul class="social-buttons">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-facebook2"></i></a></li>
-              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
         </nav>
@@ -59,7 +61,7 @@
   <!-- START: slider -->
   <section class="probootstrap-slider flexslider">
     <ul class="slides">
-        <li style="background-image: url(img/slider_4.jpg);">
+        <li style="background-image: url({{ site.url }}/assets/img/slider_4.jpg);">
             <div class="container">
                 <div class="row">
                 <div class="col-md-12 text-center" style="padding-top: 30%;">
@@ -78,7 +80,7 @@
                 </div>
             </div>
         </li>
-      <li style="background-image: url(img/slider_4.jpg);">
+      <li style="background-image: url({{ site.url }}/assets/img/slider_4.jpg);">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -97,7 +99,7 @@
           </div>
         </div>
       </li>
-      <li style="background-image: url(img/slider_6.jpg);">
+      <li style="background-image: url({{ site.url }}/assets/img/slider_6.jpg);">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -116,7 +118,7 @@
           </div>
         </div>
       </li>
-      <li style="background-image: url(img/slider_4.jpg);">
+      <li style="background-image: url({{ site.url }}/assets/img/slider_4.jpg);">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -146,7 +148,7 @@
         <div class="col-md-4">
           <div class="service left-icon probootstrap-animate">
             <div class="icon">
-              <i class="icon-rocket"></i>
+              <i class="fa fa-rocket"></i>
             </div>
             <div class="text">
               <h3 class="heading">Missão</h3>
@@ -157,7 +159,7 @@
         <div class="col-md-4">
           <div class="service left-icon probootstrap-animate">
             <div class="icon">
-              <i class="icon-presentation"></i>
+              <i class="fa fa-grav"></i>
             </div>
             <div class="text">
               <h3 class="heading">Visão</h3>
@@ -168,7 +170,7 @@
         <div class="col-md-4">
           <div class="service left-icon probootstrap-animate">
             <div class="icon">
-              <i class="icon-circle"></i>
+              <i class="fa fa-circle"></i>
             </div>
             <div class="text">
               <h3 class="heading">Valores</h3>
@@ -192,7 +194,7 @@
         <div class="col-md-4">
           <div class="probootstrap-card">
             <div class="probootstrap-card-media">
-              <img src="img/slider_4.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com">
+              <img src="{{ site.url }}/assets/img/slider_4.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com">
             </div>
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading mb0">Disponível</h2>
@@ -205,7 +207,7 @@
         <div class="col-md-4">
           <div class="probootstrap-card">
             <div class="probootstrap-card-media">
-              <img src="img/slider_2.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com">
+              <img src="{{ site.url }}/assets/img/slider_2.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com">
             </div>
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading mb0">Organizador de horários</h2>
@@ -218,7 +220,7 @@
         <div class="col-md-4">
           <div class="probootstrap-card">
             <div class="probootstrap-card-media">
-              <img src="img/slider_5.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com">
+              <img src="{{ site.url }}/assets/img/slider_5.jpg" class="img-responsive img-border" alt="Free HTML5 Template by uicookies.com">
             </div>
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading mb0">Atividades</h2>
@@ -283,8 +285,8 @@
         <div class="col-md-6">
           <div class="probootstrap-footer-widget right">
             <ul class="probootstrap-social">
-              <li><a href="https://instagram.com/grintex"><i class="icon-instagram2"></i></a></li>
-              <li><a href="https://github.com/grintex"><i class="icon-github"></i></a></li>
+              <li><a href="https://instagram.com/grintex"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/grintex"><i class="fa fa-github"></i></a></li>
             </ul>
           </div>
         </div>
@@ -293,12 +295,12 @@
   </footer>
 
   <div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+    <a href="#" class="js-gotop"><i class="fa fa-chevron-circle-up"></i></a>
   </div>
-  <script src="js/scripts.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/custom.js"></script>
 
+  <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+  <script src="{{ site.url }}/assets/js/main.js"></script>
+  <script src="{{ site.url }}/assets/js/custom.js"></script>
   
   </body>
 </html>
