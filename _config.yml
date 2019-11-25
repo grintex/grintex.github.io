@@ -4,7 +4,7 @@ email: email@domain.com
 description: Site description
 
 # hostname & protocol for your site, e.g http://domain.com
-url: "http://dev.local.com:4000/" 
+url: "https://grintex.uffs.cc" 
 
 # Social info
 twitter_username: jekyllrb
